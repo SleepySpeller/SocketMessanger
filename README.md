@@ -9,3 +9,5 @@ Beacuse its fun, and why not?
 
 ## Progress?
 Didn't even start, but I am working on an algorithm tho.
+
+UPDATE: I'm learning a lot about sockets and should come up with a simple chat algorith soon
