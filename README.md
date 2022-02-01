@@ -10,7 +10,7 @@ Beacuse its fun, and why not?
 ## Progress?
 Made an pre-alpha code, that is not really stable.
 <br>
-Im currently working on a spam protection.
+Im currently working on stuff like passwords required for you to join the server..
 I currently want to make:
 - Commands like kick, ban, mute, etc...
 - Option to join custom servers with passwords
