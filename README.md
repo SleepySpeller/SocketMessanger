@@ -8,12 +8,15 @@ This is a project for a small messanger on Python using sockets.
 Beacuse its fun, and why not?
 
 ## Progress?
-Made an pre-alpha code, that is not really stable.
+Added a login and a admin list thats functional.
 <br>
-Im currently working on stuff like passwords required for you to join the server..
-I currently want to make:
-- Commands like kick, ban, mute, etc...
-- Option to join custom servers with passwords
+I still dont recommend running the app tho, its very unstable and its easy to crash the server
+<br>
+Im currently working on Admin commands like /kick, /mute, etc...
+<br>
+What I want to add later on:
+- Spam protection
+- Sending Images
 - UI
 <br>
 This will take time, but when i finish the project it will be perfect
