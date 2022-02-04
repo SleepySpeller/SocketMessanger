@@ -12,14 +12,10 @@ Added a login and a admin list thats functional.
 <br>
 I still dont recommend running the app tho, its very unstable and its easy to crash the server
 <br>
-Im currently working on Admin commands like /kick, /mute, etc...
+I made a [Project on Github](https://github.com/SleepySpeller/SocketMessanger/projects/1) where I have a to-do list.
 <br>
-What I want to add later on:
-- Spam protection
-- Sending Images
-- UI
+I will make a Twilio to-do list later since its a lot easier to manage, but I will still update the GitHub one
 <br>
-This will take time, but when i finish the project it will be perfect
 
 ## Used Libraries:
 - threading
