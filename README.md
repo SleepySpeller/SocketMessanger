@@ -14,8 +14,6 @@ I still dont recommend running the app tho, its very unstable and its easy to cr
 <br>
 I made a [Project on Github](https://github.com/SleepySpeller/SocketMessanger/projects/1) where I have a to-do list.
 <br>
-I will make a Twilio to-do list later since its a lot easier to manage, but I will still update the GitHub one
-<br>
 
 ## Used Libraries:
 - threading
