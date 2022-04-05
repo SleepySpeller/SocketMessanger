@@ -8,7 +8,7 @@ password = input("Password: ")
 connected = False
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('127.0.0.1', 45399))
+client.connect(('127.0.0.1', 45398))
 
 def recive():
     while True:
@@ -38,8 +38,8 @@ def recive():
                 write_thread.start()
             else:
                 print(message)
-        except:
-            print("An error occurred!")
+        except Exception as e:
+            print("An error occurred! Err: ", e)
             client.close()
             break
 

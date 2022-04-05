@@ -1,13 +1,18 @@
-from re import I
+from cmath import e
 import threading
 import socket
+import re
+from tkinter import E
+import commands
+import os
+import pickle
 
 inputPassword = ""
 inputPasswordAdmin = ""
 success = True
 
 host = "127.0.0.1"
-port = 45399
+port = 45398
 password = "abc"
 
 admins = ["Speller"]
@@ -16,22 +21,51 @@ adminPasswords = ["def"]
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((host, port))
 
+statusImportedLibs = False
+
+with open('initalizedCommands', 'wb') as f:
+    pickle.dump(statusImportedLibs, f)
+
 server.listen()
 
 clients = []
 nicknames = []
 
+#Start of the command reading folder
+
+# create a list of file and sub directories 
+# names in the given directory 
+
+
+
 #send messages for all clients
 def broadcast(message):
     for client in clients:
-        client.send(message)
+        try:
+            client.send(message)
+        except:
+            print("Error in broadcasting the message")
+
+
 
 def handle(client):
     while True:
         try:
             message = client.recv(1024)
             broadcast(message)
-        except:
+            print("Message broadcasted!")
+
+            message = str(message)
+            print("message converted into string")
+
+            print(clients)
+            print(nicknames)
+            
+            commands.command.commandHandler(message, client, nicknames, clients, admins)
+
+            
+        except Exception as e:
+            print("wait that mf disconnected? error: ", e)
             index = clients.index(client)
             clients.remove(client)
             client.close()
